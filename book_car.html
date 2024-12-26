@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/book_car.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Book a Car</h1>
+</header>
+
+<section class="container">
+    <form method="POST">
+        <h2>Book your car</h2>
+        <input type="text" name="reg_number" placeholder="Car Registration Number" required>
+        <input type="number" name="days" placeholder="Number of Days" required>
+        <input type="submit" value="Book Now" class="btn">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}

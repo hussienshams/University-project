@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Signup</h1>
+</header>
+
+<section class="container">
+    <form method="POST">
+        <h2>Create an Account</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Signup" class="btn">
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}" class="btn">Login</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}

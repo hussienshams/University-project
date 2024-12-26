@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cars.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="page-title">Available Cars</h2>
+        <!-- قائمة السيارات المتاحة -->
+        <ul class="car-list">
+            {% for car in cars %}
+                <li class="car-item">
+                    <strong class="car-model">{{ car.Model }}</strong> - 
+                    <span class="car-reg">{{ car.Registration_plate }}</span> - 
+                    <span class="price">${{ car.Price_per_day }} per day</span> - 
+                    <span class="status">{{ car.statu }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <!-- أزرار الإجراءات -->
+        <div class="action-buttons">
+            <!-- زر العودة إلى لوحة المستخدم -->
+            <form action="{{ url_for('user_panel') }}" method="get">
+                <button type="submit" class="btn btn-back">Back to User Panel</button>
+            </form>
+
+            <!-- زر الحجز -->
+            <form action="{{ url_for('book_car') }}" method="get">
+                <button type="submit" class="btn btn-book">Book a Car</button>
+            </form>
+
+            <!-- زر تسجيل الخروج -->
+            <form action="{{ url_for('logout') }}" method="get">
+                <button type="submit" class="btn btn-logout">Logout</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

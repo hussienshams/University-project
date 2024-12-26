@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Reservation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block extra_css %}
+    {% endblock %}
+</head>
+<body>
+
+    <!-- عرض الرسائل المخبأة إذا كانت موجودة -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- باقي محتويات الصفحة مثل الهيدر أو الشريط الجانبي -->
+
+    <!-- محتوى الصفحة الذي يختلف من صفحة إلى أخرى -->
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

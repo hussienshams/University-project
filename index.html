@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+{% block content %}
+
+    <header>
+        <h1>Welcome to Car Booking System</h1>
+        <nav>
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+            <a href="{{ url_for('signup') }}" class="btn">Signup</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Find Your Ideal Car</h2>
+            <p>Choose from a variety of available cars at affordable prices for your next journey.</p>
+            <a href="{{ url_for('display_cars') }}" class="btn">Explore Cars</a>
+        </div>
+    </section>
+
+    <section class="cars">
+        <h2>Featured Cars</h2>
+        <div class="car-container">
+            {% for car in cars %}
+                <div class="car-card">
+                    <img src="https://via.placeholder.com/300x200" alt="{{ car['Model'] }}">
+                    <h3>{{ car['Model'] }}</h3>
+                    <p>Price per day: ${{ car['Price_per_day'] }}</p>
+                    <p>Status: {{ car['statu'] }}</p>
+                    <a href="{{ url_for('book_car') }}" class="btn">Book Now</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Car Booking. All Rights Reserved.</p>
+    </footer>
+{% endblock %}
+

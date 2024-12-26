@@ -1,0 +1,72 @@
+[
+    {
+        "Model": "Toyota Corolla",
+        "Registration_plate": "A1234BC",
+        "Price_per_day": 50,
+        "statu": "Unavailable",
+        "reservation_end": "2024-12-30"
+    },
+    {
+        "Model": "Hyundai Elantra",
+        "Registration_plate": "B5678DE",
+        "Price_per_day": 50,
+        "statu": "Unavailable",
+        "reservation_end": "2024-12-26"
+    },
+    {
+        "Model": "Kia Picanto",
+        "Registration_plate": "C9087FG",
+        "Price_per_day": 30,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Chevrolet Malibu",
+        "Registration_plate": "D4567HI",
+        "Price_per_day": 60,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Mercedes-Benz G-Class",
+        "Registration_plate": "E1122JK",
+        "Price_per_day": 150,
+        "statu": "Unavailable",
+        "reservation_end": "2024-12-27"
+    },
+    {
+        "Model": "Nissan Patrol",
+        "Registration_plate": "F3344LM",
+        "Price_per_day": 100,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Ford Mustang",
+        "Registration_plate": "G7788NO",
+        "Price_per_day": 120,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Jeep Wrangler",
+        "Registration_plate": "H9900PQ",
+        "Price_per_day": 90,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Tesla Model 3",
+        "Registration_plate": "I2468RS",
+        "Price_per_day": 130,
+        "statu": "Available",
+        "reservation_end": null
+    },
+    {
+        "Model": "Honda Civic",
+        "Registration_plate": "J1357TU",
+        "Price_per_day": 40,
+        "statu": "Available",
+        "reservation_end": null
+    }
+]

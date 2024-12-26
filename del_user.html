@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/del_user.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Manage Users</h1>
+</header>
+
+<section class="container">
+    <h2>Users List</h2>
+    <ul class="user-list">
+        {% for user, password in users.items() %}
+            <li class="user-item">
+                {{ user }}
+                <form action="" method="POST" style="display:inline;">
+                    <input type="hidden" name="username" value="{{ user }}">
+                    <button type="submit" class="btn delete-btn">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('admin_panel') }}" class="btn back-btn">Back to Admin Panel</a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}

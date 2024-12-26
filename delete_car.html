@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/delete.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Delete a Car</h1>
+</header>
+
+<section class="container">
+    <h2>Delete a Car from the Fleet</h2>
+    <form method="POST">
+        <label for="reg_number">Car Registration Number:</label>
+        <input type="text" name="reg_number" id="reg_number" placeholder="Enter Registration Number" required>
+        <input type="submit" value="Delete Car" class="btn">
+    </form>
+    <p>If you want to delete a car, please enter its registration number.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}
+

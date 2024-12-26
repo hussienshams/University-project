@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user_panel.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Welcome to Your User Panel</h1>
+</header>
+
+<section class="container">
+    <h2>Hello, {{ username }}!</h2>
+    <p>Manage your bookings and account settings here.</p>
+    <a href="{{ url_for('display_cars') }}" class="btn">View Cars</a>
+    <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}

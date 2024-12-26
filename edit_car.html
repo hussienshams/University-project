@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Edit Car Details</h1>
+</header>
+
+<section class="container">
+    <h2>Edit a Car's Information</h2>
+    <form method="POST">
+        <label for="reg_number">Car Registration Number:</label>
+        <input type="text" name="reg_number" id="reg_number" placeholder="Enter Registration Number" required>
+
+        <label for="new_model">New Model (Optional):</label>
+        <input type="text" name="new_model" id="new_model" placeholder="New Model">
+
+        <label for="new_price">New Price per Day (Optional):</label>
+        <input type="number" name="new_price" id="new_price" placeholder="New Price">
+
+        <input type="submit" value="Update Car" class="btn">
+    </form>
+    <p>Modify the car details by entering the new information.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Car Rental Service</p>
+</footer>
+{% endblock %}
+
