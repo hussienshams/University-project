@@ -1,0 +1,154 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات الخطوط العامة في الصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #0056b3;
+}
+
+/* قسم المقدمة */
+.intro {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro .btn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+}
+
+/* قسم السيارات */
+.cars {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cars h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.car-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.car-card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.car-card .btn {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+/* تفاعل الأزرار */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* تحسين العرض على الأجهزة المحمولة */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .car-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 90%;
+    }
+}

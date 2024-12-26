@@ -1,0 +1,105 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* تنسيق المحتوى */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.container a.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.container a.btn:hover {
+    background-color: #218838;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* إضافة تأثيرات تفاعلية */
+a.btn {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+a.btn:hover {
+    transform: scale(1.05);
+}
+
+/* تكييف العرض للهواتف الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h2 {
+        font-size: 1.8em;
+    }
+
+    .container p {
+        font-size: 1.1em;
+    }
+
+    a.btn {
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+}

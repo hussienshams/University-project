@@ -1,0 +1,119 @@
+/* تنسيق عام للجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* تنسيق الـ Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* تنسيق الـ Container */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.container h2 {
+    font-size: 2em;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* تنسيق الـ Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+form input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* تنسيق الـ Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* إضافة تأثيرات أنيميشن */
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

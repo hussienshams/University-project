@@ -1,0 +1,142 @@
+/* تنسيق عام للجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* تنسيق الـ Header */
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+/* تنسيق الـ Container */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* تنسيق الـ Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* الحقول النصية */
+form input[type="text"],
+form input[type="password"] {
+    font-size: 1.1em;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* تغيير اللون عند التفاعل مع الحقول */
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+}
+
+/* الأزرار */
+form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+form input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* الرابط بين تسجيل الدخول والتسجيل */
+.container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+}
+
+.container p a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* 
+.container p a:hover {
+    color: #2980b9;
+} */
+
+/* تنسيق الـ Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* إضافة تأثير أنيميشن للـ Container */
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

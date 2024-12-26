@@ -1,0 +1,104 @@
+/* تحسين تنسيق القائمة */
+.car-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.car-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.car-model {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.car-reg {
+    font-size: 16px;
+    color: #555;
+}
+
+.price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status {
+    font-style: italic;
+    color: #888;
+}
+
+/* تنسيق الأزرار */
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+.btn-back {
+    background-color: #007bff;
+}
+
+.btn-book {
+    background-color: #f39c12;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+}
+
+.page-title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* إضافات للهيكل العام */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+ul {
+    margin-top: 20px;
+}
